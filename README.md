@@ -1,4 +1,5 @@
 # this is for html
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -136,3 +137,4 @@
     <hr>
 </body>
 </html>
+```html

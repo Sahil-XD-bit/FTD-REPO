@@ -1,0 +1,109 @@
+body{
+    background: linear-gradient(to right, orange, darkorange);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+div{
+    margin-block: 10px;
+}
+
+form{
+    padding: 20px;
+    text-align: left;
+    height:fit-content;
+    width: fit-content;
+    border: 4px solid black;
+    border-radius: 20px;
+    background-color: white;  /* Adds contrast */
+    box-shadow:  25px 25px 50px rgb(255, 0, 0); /* Soft shadow */
+}
+.input{
+    display: flex;
+    flex-direction: column; 
+}
+
+input::placeholder{
+    text-align: center;
+    color: black;
+}
+
+input {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    transform: scale(1.1); /* Grows smoothly */
+    background-color: lightgray;
+}
+
+input:focus {
+    border-color: darkblue;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.5); /* Blue glow effect */
+}
+
+label{
+    padding-block: 5px;
+    margin-inline-end: 10px;
+}
+
+.remember-forgot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.login-btn {
+    display: block;    /* Makes button a block element */
+    margin: 10px auto; /* Centers horizontally */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.login-btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1); /* Slightly enlarges button */
+    border: 2px solid black;
+}
+
+.login-btn:active {
+    transform: scale(0.9); /* Shrinks slightly on click */
+}
